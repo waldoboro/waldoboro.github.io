@@ -6,14 +6,26 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>
 
+@font-face {
+  font-family: SyneMono;
+  src: url(SyneMono-Regular.ttf);
+}
+
+div {
+  font-family: SyneMono;
+}
+
 /* Bordered form */
 form {
-  border: 3px solid #f1f1f1;
+	text-align: center;
+  width: 50%;
+  border: 5px solid #f1f1f1;
 }
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-  width: 100%;
+font-family: SyneMono;
+  width: 99%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -23,7 +35,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #5D15B3;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -83,10 +95,14 @@ span.psw {
 <body style="text-align:center;">
 <form action="action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <img src="bis.jpg" alt="悲しい" class="avatar" style="width:180px;height:180px;>
+	 
   </div>
-
+ 
   <div class="container">
+  <br>
+  <h1>悲しい</h1>
+ <br>
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -95,14 +111,11 @@ span.psw {
 
     <button type="submit">Login</button>
     <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
+      <input type="checkbox" checked="checked" name="remember"> Sign in as Hidden
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+
 </form>
 
 </body>
